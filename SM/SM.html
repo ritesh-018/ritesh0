@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Search Box</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./media/images/sm logo.png" alt="logo" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Furniture Work</a>
+                        <a class="dropdown-item" href="#">Painting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Plumbing</a>
+                        <a class="dropdown-item" href="#">Electrical Work</a>
+                        <a class="dropdown-item" href="#">Construction</a>
+                        <a class="dropdown-item" href="#">Renovation</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="hero-section text-center">
+      <div class="overlay"></div>
+      <video autoplay loop muted>
+          <source src="./media/videos/855427-hd_1920_1080_25fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+          <h1>Welcome to Your Construction Business</h1>
+          <p>Your trusted partner in construction and renovation</p>
+          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+      </div>
+  </div>
+  
+    
+    <div class="services-section container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./media/images/furniture.jpg" class="img-fluid" alt="Service 1">
+                <h3>Furniture Work</h3>
+                <p>Custom furniture design and build.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./media/images/paint.jpg" class="img-fluid" alt="Service 2">
+                <h3>Painting</h3>
+                <p>Professional painting services for your home or office.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./media/images/pexels-cal-david-231581-735319.jpg" class="img-fluid" alt="Service 3">
+                <h3>Plumbing</h3>
+                <p>Reliable plumbing solutions.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-section container my-5">
+        <h2 class="text-center mb-4">Our Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./media/images/paint.jpg" class="img-fluid" alt="Project 1">
+                <h4>Project Title</h4>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./media/images/pexels-pixabay-271667.jpg" class="img-fluid" alt="Project 2">
+                <h4>Project Title</h4>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./media/images/pexels-cal-david-231581-735319.jpg" class="img-fluid" alt="Project 3">
+                <h4>Project Title</h4>
+                <p>Brief description of the project.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonials-section container my-5">
+        <h2 class="text-center mb-4">What Our Clients Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <blockquote>
+                    "Great service and quality work!"
+                    <footer>- John Doe</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote>
+                    "Professional and reliable."
+                    <footer>- Jane Smith</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote>
+                    "Highly recommend for any construction needs."
+                    <footer>- Mike Johnson</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-section text-center my-5" id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 123-456-7890 | Email: info@yourbusiness.com</p>
+        <a href="contact.html" class="btn btn-primary">Contact Form</a>
+    </div>
+    
+    <div class="container my-5">
+        <h1 class="text-center mb-4">About Us</h1>
+        <p>Our company has been providing top-notch construction services since [Year]...</p>
+        <h2 class="mt-4">Our Team</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./media/images/pexels-pixabay-271667.jpg" class="img-fluid" alt="Team Member 1">
+                <h4>John Doe</h4>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./media/images/paint.jpg" class="img-fluid" alt="Team Member 2">
+                <h4>Jane Smith</h4>
+                <p>Project Manager</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./media/images/pexels-pixabay-271667.jpg" class="img-fluid" alt="Team Member 3">
+                <h4>Mike Johnson</h4>
+                <p>Lead Architect</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-section text-center my-5" id="contact">
+      <h2>Contact Us</h2>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <form class="contact-form">
+                      <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="contact-info my-4">
+          <p>Phone: 123-456-7890</p>
+          <p>Email: info@yourbusiness.com</p>
+          <p>Address: 123 Main St, Your City, Your Country</p>
+      </div>
+      <div class="map my-4">
+          <!-- Embed your map iframe here -->
+      </div>
+  </div>
+  
+
+</body>
+</html>
